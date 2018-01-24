@@ -14,4 +14,13 @@
     <servlet-name>RegistrationController</servlet-name>
     <url-pattern>/RegistrationController</url-pattern>
   </servlet-mapping>
+  
+   <servlet>
+        <servlet-name>FileUploadHandler</servlet-name>
+        <servlet-class>FileUploadHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FileUploadHandler</servlet-name>
+        <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
 </web-app>
