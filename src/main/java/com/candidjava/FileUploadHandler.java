@@ -15,7 +15,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  */
 public class FileUploadHandler extends HttpServlet {
     private final String UPLOAD_DIRECTORY = "C:/uploads";
-  
+  //https://www.javacodegeeks.com/2013/08/file-upload-example-in-servlet-and-jsp.html
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
