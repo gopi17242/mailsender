@@ -24,7 +24,7 @@ import org.apache.commons.fileupload.servlet.ServletFileUpload;
  * @author Javin Paul
  */
 public class FileUploadHandler extends HttpServlet {
-    private final String UPLOAD_DIRECTORY = "//app//target//tomcat.54869//webapps//expanded//";
+    private final String UPLOAD_DIRECTORY = "\\app\\target\\tomcat.54869\\webapps\\expanded\\";
   
     @Override
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
