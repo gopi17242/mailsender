@@ -9,10 +9,32 @@
  
     <body> 
         <div>
-            <h3> Choose File to Upload in Server </h3>
+            <h3> Task 1:: </h3>
             <form action="upload" method="post" enctype="multipart/form-data">
+               <label>Upload excel sheet with proper data</label>
                 <input type="file" name="file" />
-                <input type="submit" value="upload" />
+                <input type="submit" value="Upload" /><br>
+                
+            </form>          
+        </div>
+        
+        <div>
+            <h3> Task 2:: </h3>
+            <form action="readAndWriteSheets" method="post" enctype="multipart/form-data">
+                <label>Go to process</label>
+                <input type="submit" value="Proceed" /><br>
+                
+            </form>          
+        </div>
+        
+         <div>
+            <h3> Task 3:: </h3>
+            <form action="sheetsPrepare" method="post" enctype="multipart/form-data">
+                <label>Send Mails</label>
+                <input type="text" value="mailId">
+                 
+                <input type="submit" value="Proceed" /><br>
+                
             </form>          
         </div>
       

@@ -2,7 +2,7 @@
 <web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
   <display-name>mailsender</display-name>
   <welcome-file-list>
-    <welcome-file>registration.jsp</welcome-file>
+    <welcome-file>fileupload.jsp</welcome-file>
   </welcome-file-list>
   <servlet>
     <description></description>
@@ -15,12 +15,21 @@
     <url-pattern>/RegistrationController</url-pattern>
   </servlet-mapping>
   
-   <servlet>
+  <servlet>
         <servlet-name>FileUploadHandler</servlet-name>
-        <servlet-class>FileUploadHandler</servlet-class>
+        <servlet-class>com.candidjava.FileUploadHandler</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FileUploadHandler</servlet-name>
         <url-pattern>/upload</url-pattern>
+    </servlet-mapping>
+  
+   <servlet>
+        <servlet-name>readAndWriteSheets</servlet-name>
+        <servlet-class>FileUploadHandler</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>readAndWriteSheets</servlet-name>
+        <url-pattern>/readAndWriteSheets</url-pattern>
     </servlet-mapping>
 </web-app>
