@@ -30,27 +30,27 @@ public class FileUploadHandler extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
     	
+    	Path workingDirectory=Paths.get(".").toAbsolutePath();
+        System.out.println("current dir = " + workingDirectory.getParent());
      
-     	Path workingDirectory=Paths.get(".").toAbsolutePath();
+     /*	Path workingDirectory=Paths.get(".").toAbsolutePath();
         System.out.println("current dir = " + workingDirectory.getRoot());
         System.out.println("current dir = " + workingDirectory);
      
-     
+     */
     	 String path = request.getServletContext().getRealPath("/");
     	 System.out.println("path=="+path);
-         File f = new File ("/mailsender/myNewFolder" +"myNewFolder");
-         f.mkdir();
+   /*      File f = new File ("/mailsender/myNewFolder" +"myNewFolder");
+         f.mkdir(); */
         
     	
 
-		final String dir = System.getProperty("user.dir");
+/*		final String dir = System.getProperty("user.dir");
         System.out.println("current dir send= " + dir);
         File directory = new File(dir+"/gopinadhr");
         directory.mkdir();
-
+*/
     	
-    	Path workingDirectory=Paths.get(".").toAbsolutePath();
-        System.out.println("current dir = " + workingDirectory.getParent());
      
         ServletContext servletContext = getServletContext();
 		String contextPath = servletContext.getRealPath(File.separator);
